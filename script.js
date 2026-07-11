@@ -30,7 +30,7 @@ function startSurprise() {
 
 function typeMessage() {
 
-    let text = ` I love you so much ❤️
+    let text = ` I love you so much 😘❤️
 
 You are a very special person in my life, and I feel lucky to have you. My biggest wish for you is that you always stay happy, healthy, and successful.
 
