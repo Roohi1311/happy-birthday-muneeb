@@ -52,7 +52,6 @@ May Allah fill your life with endless happiness, peace, and countless blessings 
     }
 
     typing();
-    setTimeout(showSlideshow, 30000);
 }
 function createHeart() {
     const heart = document.createElement("div");
@@ -75,8 +74,8 @@ function showSlideshow(){
 
     document.body.insertAdjacentHTML("beforeend",`
         <div class="slideshow">
-            <img id="slide" src="m.jfif">
-            <h2>Forever Yours,<br>Roohi ❤️</h2>
+            <img id="slide" src="R.jfif">
+            <h2>Always Be With,<br>You ❤️</h2>
         </div>
     `);
 
