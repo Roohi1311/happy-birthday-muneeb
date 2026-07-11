@@ -53,3 +53,20 @@ May Allah fill your life with endless happiness, peace, and countless blessings 
 
     typing();
 }
+function createHeart() {
+    const heart = document.createElement("div");
+
+    heart.innerHTML = "❤️";
+    heart.className = "heart";
+
+    heart.style.left = Math.random() * window.innerWidth + "px";
+    heart.style.fontSize = (20 + Math.random() * 20) + "px";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 5000);
+}
+
+setInterval(createHeart, 400);
