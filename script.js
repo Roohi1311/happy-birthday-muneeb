@@ -23,8 +23,10 @@ function startSurprise() {
 
         if (count === 0) {
             clearInterval(timer);
-            document.getElementById("countdown").innerHTML = "Happy Birthday Muneeb ❤️";
-            typeMessage();
+document.getElementById("countdown").innerHTML = "Happy Birthday Muneeb ❤️";
+
+showSlideshow();
+typeMessage();
         }
 
     }, 1000);
