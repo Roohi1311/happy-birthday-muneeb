@@ -74,13 +74,13 @@ function showSlideshow(){
 
     document.body.insertAdjacentHTML("beforeend",`
         <div class="slideshow">
-            <img id="slide" src="R.jfif">
+            <img id="slide" src="Mm.jfif">
             <h2>Always Be With,<br>You ❤️</h2>
         </div>
     `);
 
     let images=[
-        "R.jfif",
+        "Mm.jfif",
         "Muneeb.jfif"
     ];
 
