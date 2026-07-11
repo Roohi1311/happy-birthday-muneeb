@@ -3,7 +3,11 @@ function startSurprise() {
     document.getElementById("welcome").style.display = "none";
 
     let music = document.getElementById("music");
-    music.play();
+    music.play().then(() => {
+    console.log("Music Started");
+}).catch(error => {
+    console.error("Music Error:", error);
+});
     music.volume=0.5;
 
     document.body.innerHTML += `
