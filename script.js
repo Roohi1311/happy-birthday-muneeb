@@ -30,7 +30,7 @@ function startSurprise() {
 
 function typeMessage() {
 
-    let text = "Happy Birthday Muneeb ❤️✨
+    let text = ` Happy Birthday Muneeb ❤️✨
 
 On your special day, I just want to make you feel how precious and special you are.
     
@@ -44,7 +44,7 @@ Always remember that you are valued, appreciated and cared for. ❤️
 
 Once again, Happy Birthday Muneeb ❤️🎂
 
-May Allah bless you today, tomorrow, and always. Ameen 🤲✨";
+May Allah bless you today, tomorrow, and always. Ameen 🤲✨`;
     let i = 0;
     let box = document.getElementById("typewriter");
 
