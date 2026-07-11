@@ -30,8 +30,11 @@ function startSurprise() {
 
 function typeMessage() {
 
-    let text = ` Happy Birthday Muneeb ❤️✨
-May Allah bless you today, tomorrow, and always. Ameen 🤲✨`;
+    let text = ` I love you so much ❤️
+
+You are a very special person in my life, and I feel lucky to have you. My biggest wish for you is that you always stay happy, healthy, and successful.
+
+May Allah fill your life with endless happiness, peace, and countless blessings Aameen Sum Aameen . Always keep smiling because your happiness means a lot to me. ❤️✨`;
     let i = 0;
     let box = document.getElementById("typewriter");
 
