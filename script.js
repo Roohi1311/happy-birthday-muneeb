@@ -8,12 +8,12 @@ function startSurprise() {
     });
     music.volume=1;
 
-    document.body.innerHTML += `
-        <div class="container">
-            <h1 id="countdown">5</h1>
-            <p id="typewriter"></p>
-        </div>
-    `;
+  document.body.insertAdjacentHTML("beforeend", `
+    <div class="container">
+        <h1 id="countdown">5</h1>
+        <p id="typewriter"></p>
+    </div>
+`);
 
     let count = 5;
     let timer = setInterval(() => {
