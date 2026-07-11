@@ -8,7 +8,7 @@ function startSurprise() {
 }).catch(error => {
     console.error("Music Error:", error);
 });
-    music.volume=0.5;
+    music.volume=1;
 
     document.body.innerHTML += `
         <div class="container">
