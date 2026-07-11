@@ -81,7 +81,7 @@ function showSlideshow(){
     `);
 
     let images=[
-        "M.jfif",
+        "R.jfif",
         "Muneeb.jfif"
     ];
 
