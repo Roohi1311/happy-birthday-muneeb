@@ -47,7 +47,7 @@ button{
     cursor:pointer;
     background:#ff4d88;
     color:white;
-    transition:.3s;
+    transition:.2s;
 }
 
 button:hover{
