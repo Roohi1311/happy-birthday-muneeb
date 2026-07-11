@@ -1,42 +1,42 @@
-const startBtn = document.getElementById("startBtn");
-const intro = document.getElementById("intro");
-const surprise = document.getElementById("surprise");
+function startSurprise() {
 
-startBtn.addEventListener("click", () => {
-    intro.style.display = "none";
-    surprise.style.display = "block";
+    document.getElementById("welcome").style.display = "none";
 
-    startCountdown();
-});
+    let music = document.getElementById("music");
+    music.play();
 
-function startCountdown() {
+    document.body.innerHTML += `
+        <div class="container">
+            <h1 id="countdown">5</h1>
+            <p id="typewriter"></p>
+        </div>
+    `;
+
     let count = 5;
-    const countdown = document.getElementById("countdown");
-
-    countdown.innerHTML = count;
-
-    const timer = setInterval(() => {
+    let timer = setInterval(() => {
         count--;
 
-        if (count > 0) {
-            countdown.innerHTML = count;
-        } else {
+        document.getElementById("countdown").innerHTML = count;
+
+        if (count === 0) {
             clearInterval(timer);
-            countdown.innerHTML = "Surprise ❤️";
-            showMessage();
+            document.getElementById("countdown").innerHTML = "Happy Birthday Muneeb ❤️";
+            typeMessage();
         }
+
     }, 1000);
 }
 
-function showMessage() {
-    const text = "I have something special for you ✨";
-    const message = document.getElementById("typewriter");
 
+function typeMessage() {
+
+    let text = "You are my special person. I made this surprise only for you ❤️✨";
     let i = 0;
+    let box = document.getElementById("typewriter");
 
     function typing() {
         if (i < text.length) {
-            message.innerHTML += text.charAt(i);
+            box.innerHTML += text.charAt(i);
             i++;
             setTimeout(typing, 100);
         }
