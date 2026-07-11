@@ -4,6 +4,7 @@ function startSurprise() {
 
     let music = document.getElementById("music");
     music.play();
+    music.volume=0.5;
 
     document.body.innerHTML += `
         <div class="container">
