@@ -50,6 +50,7 @@ May Allah fill your life with endless happiness, peace, and countless blessings 
     }
 
     typing();
+    setTimeout(showSlideshow, 30000);
 }
 function createHeart() {
     const heart = document.createElement("div");
@@ -68,3 +69,25 @@ function createHeart() {
 }
 
 setInterval(createHeart, 400);
+function showSlideshow(){
+
+    document.body.insertAdjacentHTML("beforeend",`
+        <div class="slideshow">
+            <img id="slide" src="m.jfif">
+            <h2>Forever Yours,<br>Roohi ❤️</h2>
+        </div>
+    `);
+
+    let images=[
+        "m.jfif",
+        "Muneeb.jfif"
+    ];
+
+    let i=0;
+
+    setInterval(()=>{
+        i=(i+1)%images.length;
+        document.getElementById("slide").src=images[i];
+    },3000);
+
+}
